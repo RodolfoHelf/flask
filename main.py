@@ -4,7 +4,7 @@ from flask             import Flask, request, Response
 from rossmann import Rossmann
 
 # loading model
-model = pickle.load(open("/parameter/xgb_tuned.pkl","rb"))
+model = pickle.load(open("./parameter/xgb_tuned.pkl","rb"))
 
 # initialize API
 app = Flask( __name__ )
